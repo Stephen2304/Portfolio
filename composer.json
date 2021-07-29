@@ -1,0 +1,20 @@
+{
+    "name": "sj/portfolio",
+    "description": "My portfolio",
+    "autoload": {
+        "psr-4": {
+            "Sj\\Portfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stephen",
+            "email": "jacquesstephan10@gmail.com"
+        }
+    ],
+    "require": {
+        "wildbit/postmark-php": "^4.0",
+        "phpmailer/phpmailer": "^6.5",
+        "mailjet/mailjet-apiv3-php": "^1.5"
+    }
+}

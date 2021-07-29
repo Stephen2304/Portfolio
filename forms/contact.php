@@ -17,11 +17,12 @@
 
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
-  
+
   $contact->to = $receiving_email_address;
   $contact->from_name = $_POST['name'];
   $contact->from_email = $_POST['email'];
   $contact->subject = $_POST['subject'];
+  $contact->recaptcha_secret_key = '6Lf1sscbAAAAAL1JDJhnVlUEQalNY6IRaqA5Iyb0';
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
   /*
@@ -36,6 +37,9 @@
   $contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
+  if($_POST['privacy'] !='accept') {
+    die('Veuillez accepter nos conditions d\'utilisation et notre politique de confidentialité');
+  }
 
   echo $contact->send();
 ?>

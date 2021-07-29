@@ -8,6 +8,7 @@
   <title>Portfolio - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -605,7 +606,8 @@
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/sendmail.php" method="post" role="form" class="php-email-form">
+              
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -622,14 +624,22 @@
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" rows="10" value="Toujours" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
+              <div class="form-group">
+                <span class="ms-2">Acceptez nos <a href="terms.html">conditions d'utilisation</a> et <a href="privacy.html">politique de confidentialité</a></span>
+                <input type="checkbox" name="privacy" value="accept" class="float-left h-auto mt-1" data-rule="checked" data-msg="Veuillez accepter nos conditions d'utilisation et politique de confidentialité">
+                <div class="valider"></div>
+                </div>
+                <!-- <input type="hidden" name="send" value="1"> -->
               <div class="text-center"><button type="submit">Send Message</button></div>
+              <!-- <div class="g-recaptcha" data-sitekey="6Lf1sscbAAAAAE5_efpQmDwz7eBuNDXC-7CTtVut"></div> -->
+              
             </form>
           </div>
 
@@ -668,6 +678,10 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script> -->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
