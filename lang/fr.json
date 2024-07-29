@@ -82,5 +82,18 @@
     "contact": "Contact",
     "remember": "N’oubliez pas de nous laisser un message.",
     "mailer": "Par Email",
-    "follow": "suivez-moi sur"
+    "follow": "suivez-moi sur",
+
+
+    "poupock_sarl":"Poupock Sarl",
+    "poupock_date":"Novembre 2023 - Maintenant",
+    "consultant_dev":"Consultant Developeur Laravel",
+    "fullstack_dev":"Fullstack Developer.",
+    "backend_api":"Backend Api.",
+
+
+    "mapnrank":"Map&Rank",
+    "mapnrank_date":"Novembre 2023 - Now",
+    "fullstack_fulltime":"Fullstack developer - Fulltime",
+    "app_deploy":"Appplication Deploiement."
 }
