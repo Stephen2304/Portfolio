@@ -57,3 +57,5 @@ loadTranslations(currentLanguage)
 // Gérer le clic sur le bouton de changement de langue
 document.getElementById('frButton').addEventListener('click', () => changeLanguage('fr'));
 document.getElementById('enButton').addEventListener('click', () => changeLanguage('en'));
+document.getElementById('frButton_1').addEventListener('click', () => changeLanguage('fr'));
+document.getElementById('enButton_1').addEventListener('click', () => changeLanguage('en'));
